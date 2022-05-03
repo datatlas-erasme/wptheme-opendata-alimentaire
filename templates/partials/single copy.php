@@ -1,3 +1,28 @@
+<div class="container my-8 mx-auto">
+
+<?php 
+	
+	if ( have_posts() ) :
+
+		while ( have_posts() ) : the_post(); ?>
+
+			<h1><?php the_title(); ?></h1>
+			<small>Posted on :  <?php the_time('F j, Y');?> at <?php the_time('g:i a');?>, in <?php the_category();?></small>
+
+			<section><?php the_content(); ?></section>
+
+		<?php
+		// If comments are open or we have at least one comment, load up the comment template.
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+		endif;
+		?>
+
+	<?php endwhile; ?>
+
+<?php endif; ?>
+
+</div>
 <div class="Example bg-indigo-700 fixed flex inset-0 items-center justify-center">
 	<div class="Example__inner max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
 		<h2 class="Example__title text-3xl font-extrabold text-white sm:text-4xl">

@@ -1,19 +1,31 @@
-// you can import modules from the theme lib or even from
-// NPM packages if they support it…
-import ExampleComponent1 from "./components/ExampleComponent1";
-
-// you can also require modules if they support it…
-const ExampleModule2 = require('./components/example-2');
-
-// Some convenient tools to get you started…
 import ReplaceObfuscatedEmailAddresses from "./components/ReplaceObfuscatedEmailAddresses";
 import AnimateOnPageLinks from "./components/AnimateOnPageLinks";
+import isOpen from './components/navMobile'
 
 
 // Initialise our components on jQuery.ready…
-// jQuery(function ($) {
-//     ExampleComponent1.init();
-//     ExampleModule2.init();
-//     ReplaceObfuscatedEmailAddresses.init();
-//     AnimateOnPageLinks.init();
-// });
+jQuery(function ($) {
+    ReplaceObfuscatedEmailAddresses.init();
+    AnimateOnPageLinks.init();
+});
+
+
+window.addEventListener("DOMContentLoaded", function () {
+
+    const navHidden = document.querySelector('#nav-hidden');
+    const burger = document.querySelector('#mobileButton');
+
+        const menuOpen = document.getElementById('mobileButton');
+        menuOpen.addEventListener('click', (e) => {
+            menuOpen.classList.toggle('mobile-menu--open');
+            const animLine = document.getElementById('mobileButton').children;
+            animLine[0].classList.toggle('mobile-nav-button__line--1');
+            animLine[1].classList.toggle('mobile-nav-button__line--2');
+            animLine[2].classList.toggle('mobile-nav-button__line--3');
+        } )
+
+
+    burger.addEventListener("click", () => {
+        isOpen();
+    });
+});

@@ -1,0 +1,63 @@
+footer{
+    @apply hidden ;
+
+    @screen lg {
+        @apply flex justify-around;
+
+        div{
+            @apply flex items-center;
+            a{
+                @apply m-4;
+            }
+        }
+
+        .menu-footer-navigation-container{
+            ul{
+                @apply flex place-content-around;
+        
+                li{
+                    @apply text-base underline;
+            
+                    a{
+                        @apply block mt-4 mr-4;
+    
+                        @screen lg {
+                            @apply inline-block mt-0;
+    
+                            &:hover{
+                                @apply text-white;
+                            }
+                        }
+                    }
+    
+                    @screen lg {
+                        @apply flex-grow;
+                    }
+                }
+    
+                @screen lg{
+                   @apply flex items-center w-auto;
+                }
+            }
+            
+        }
+    }
+}
+
+.post-footer {
+@apply hidden;
+    @screen lg {
+        @apply block bg-black text-secondary text-xs p-2 m-0 min-w-screen;
+    
+        div{
+            @apply container mx-auto flex justify-between;
+            p{
+                @apply text-sm inline-block;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+    
+}
+
+

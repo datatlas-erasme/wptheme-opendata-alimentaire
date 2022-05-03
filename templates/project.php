@@ -1,7 +1,6 @@
 <?php
 /*
- * Template Name: Example Page Template
- * Template Post Type: post, page, whatever
+ * Template Name: Default Template
  */
 
 get_header();

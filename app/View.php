@@ -1,6 +1,6 @@
 <?php
 
-namespace WpTailwindCssThemeBoilerplate;
+namespace MangerLocalTheme;
 
 class View {
 

@@ -1,0 +1,27 @@
+.page-id-11{
+    .entry-content{
+        @apply container relative mt-10;
+
+        .wp-block-columns{
+            .wp-block-column{
+                .wp-block-columns{
+                    .wp-block-column{
+                        .wp-block-columns{
+                            @apply m-0;
+                        }
+                    }
+                }
+            }
+        }
+        .wp-block-gallery{
+            .wp-block-image{
+                    @apply mb-0;
+                }
+    
+                @screen lg {
+                    @apply my-10;
+                }
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+.block-cta{
+    @apply pt-10 pb-10;
+    border-top: 5px solid #AAD7FF;
+    border-bottom: 5px solid #AAD7FF;
+    &::before{
+        content: url(svgencode('<svg width="924" height="21" viewBox="0 0 924 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M920.383 17.4455C839.136 16.8479 757.888 16.2503 676.641 15.6528C644.072 15.4132 611.373 15.6164 578.894 14.0639C555.339 12.938 532.015 10.8874 508.493 9.67978C423.869 5.33528 339.187 4.47155 254.225 3.84666C189.236 3.36868 123.385 2.74649 58.5074 4.19539C44.5745 4.50655 30.857 6.9033 17.0529 7.32189C12.7492 7.45239 -0.0920779 8.06572 4.22315 8.09746" stroke="#AAD7FF" stroke-width="6" stroke-linecap="round"/></svg>')); 
+        position: relative;
+        display: block;
+
+    }
+}

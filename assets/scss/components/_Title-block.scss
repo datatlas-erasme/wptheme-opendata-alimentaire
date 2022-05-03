@@ -1,0 +1,16 @@
+.title-block{
+    // background-image: url('../../assets/img/bi_arrow-down-circle-fill.png');
+    .wp-block-column{
+               
+        &:last-child{
+            @apply ml-0;
+            flex-basis: 90% !important;
+        }
+        .wp-block-image{
+            @apply mb-0;
+        }
+        p{
+            @apply m-0;
+        }
+    }
+}

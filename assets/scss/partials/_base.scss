@@ -1,14 +1,80 @@
-// Add any custom base CSS can go here
-
-
 // Foundation
 // =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
-html {
-  @apply antialiased;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
 
-  @screen md {
-    font-size: 18px;
+body, html{
+  @apply antialiased text-sm font-sans m-0 p-0 min-h-screen;
+  text-rendering: optimizeLegibility;
+  @screen lg {
+    @apply static text-lg ;
+  }
+}
+
+main, footer{
+  box-sizing: content-box;
+  @screen lg{
+    @apply relative;
+  }
+}
+
+#wpadminbar{
+  display: none;
+}
+
+ // HEADINGS //
+
+ h1{
+   @apply text-3xl mt-4 font-medium font-title leading-10 text-primary;
+   @screen lg{
+    @apply text-4xl mt-6;
+  }
+ }
+
+ h2{
+   @apply text-2xl mt-4 font-title leading-snug font-bold;
+   @screen lg{
+     @apply text-3xl mt-6;
+   }
+ }
+
+h3{
+ @apply text-xl	font-bold my-6 font-title;
+    @screen lg{
+      @apply text-2xl;
+  }
+}
+
+.subtitle{
+  @apply text-xl;
+  @screen lg{
+    @apply text-2xl;
+  }
+}
+
+p, li{
+  @apply my-6 text-base text-primary;
+}
+
+.bandeau-header{
+  @apply w-screen;
+}
+
+.entry-title {
+  display: none;
+  position: relative;
+}
+
+.wp-block-columns{
+  @screen lg{
+    @apply my-4;
+  }
+}
+
+.wp-block-group{
+  @apply my-4;
+}
+
+.entry-content{
+  @screen lg{
+    @apply relative container;
   }
 }

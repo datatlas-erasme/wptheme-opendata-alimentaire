@@ -1,0 +1,10 @@
+.page-id-9{
+    .entry-content{
+        @apply container mt-20;
+        .wp-block-columns{
+            .wp-block-column:first-child{
+                @apply mt-10;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.wpcf7{
+    @apply flex flex-col text-primary min-w-full;
+
+    div{
+        @apply my-4 flex flex-col;
+        .cf7name{
+            @apply flex w-28;
+
+            div:nth-child(1), div:nth-child(3){ 
+                margin: 0 !important;
+            }
+        }
+    }
+    input[type=email], input[type=text], textarea{
+        @apply border-2 rounded	bg-lightgray border-primary min-w-full;
+    }
+
+    input[type=submit]{
+        @apply flex justify-center bg-red text-white font-bold rounded-lg border-transparent w-28 p-2;
+    }
+
+    input[type=checkbox]{
+        @apply w-auto;
+    }
+
+}

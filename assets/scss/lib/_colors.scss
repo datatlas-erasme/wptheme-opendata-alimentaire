@@ -1,0 +1,44 @@
+
+// TEXT COLORS //
+
+.has-text-color{
+    @apply text-primary;
+}
+
+.has-primary-color{
+    @apply text-primary;
+}
+
+.has-red-color{
+    @apply text-red;
+}
+
+.has-darkred-color{
+    @apply text-darkred;
+}
+
+.has-secondary-color{
+    @apply text-secondary;
+}
+
+.has-darkgray-color{
+    @apply text-darkgray;
+}
+
+.has-gray-color{
+    @apply text-gray;
+}
+
+.has-background-color{
+    @apply text-background;
+}
+
+.has-blue-color{
+    @apply text-blue;
+}
+
+// BACKGROUND COLORS //
+
+.has-red-background-color{
+    @apply bg-red;
+}

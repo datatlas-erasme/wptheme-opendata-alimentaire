@@ -1,0 +1,14 @@
+.page-id-6{
+    .entry-content{
+        @screen lg{
+            @apply container mx-auto;
+
+            .cover-title{
+                @apply flex items-center;
+                a{
+                    @apply pl-5;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 @import "lib/mixins";
 @import "~tailwindcss/base";
 @import "partials/base";
@@ -6,3 +8,21 @@
 @import "partials/components";
 @import "~tailwindcss/utilities";
 @import "partials/utilities";
+@import "lib/svg-encode";
+@import "lib/button";
+@import "lib/colors";
+
+@import "pages/HomePage";
+@import "pages/Contact";
+@import "pages/Projet";
+
+@font-face {
+    font-family: "Brown-Bold";
+    src: local("../font/Brown-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "BrownMedium-Regular";
+    src: local("../font/BrownMedium-Regular.ttf");
+  }
+

@@ -1,0 +1,9 @@
+.map-local{
+    @apply w-full min-h-[90vh] mt-10;
+    @screen lg{
+        @apply min-h-[70vh] mb-20;
+    }
+    @screen xl{
+        @apply w-full min-h-[65vh];
+    }
+}

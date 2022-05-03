@@ -1,0 +1,10 @@
+.wp-block-gallery{
+    .wp-block-image{
+        img{
+            @apply h-auto m-10;
+        }
+        figcaption{
+            @apply bg-transparent text-primary mt-20;
+        }
+    }
+}

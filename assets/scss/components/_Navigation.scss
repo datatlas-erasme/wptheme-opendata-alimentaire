@@ -1,0 +1,182 @@
+.navbar-custom {
+    @apply flex justify-start w-screen m-0 bg-secondary flex-col;
+
+    .nav-brand{
+        @apply flex items-center bg-secondary m-4;
+
+        a{
+            display: flex;
+            align-items: center;
+
+            .project-brand{
+                @apply border-l-2 border-red pr-3 ml-3;
+            }
+
+            img{
+                @apply w-24;
+
+                @screen lg{
+                    @apply w-28;
+                }
+
+            }
+
+        }
+
+        span{
+            @apply bg-red w-10 text-center rounded-3xl text-secondary;
+            @screen lg{
+                @apply w-14 text-base;
+            }
+        }
+    }
+
+    .mobile-nav-button {
+        @apply absolute top-14 right-10 w-8 h-7 cursor-pointer ml-auto;
+        z-index:9999;
+  
+        .mobile-nav-button__line {
+            @apply bg-black w-full h-1 relative;
+            transition:1s ease;
+            &:nth-of-type(2) {
+                margin:0.5rem 0;
+            }
+        }
+        .mobile-nav-button__line--1 {
+            transform: rotate(45deg);
+            top: 13px;
+            position: absolute;
+        }
+        .mobile-nav-button__line--2 {
+            display: none;
+        }
+        .mobile-nav-button__line--3 {
+            transform: rotate(135deg);
+            top: 13px;
+            position: absolute;        
+        }
+  
+        @screen lg {
+            @apply hidden;
+        }
+    };
+
+    nav{
+
+        @screen lg {
+            @apply container;
+          }
+    
+        #menu-contact{
+            display: none;
+            @screen lg {
+                @apply hidden bg-darkred text-secondary text-center p-3 box-content rounded-br-default rounded-bl-default font-bold text-xl cursor-pointer;
+            a{
+                margin:0;
+            }
+            }
+        }
+    
+    }
+
+    @screen lg{
+        @apply px-6 flex justify-around;
+    }
+
+}
+
+#burger{
+    @apply mt-8 hidden bg-secondary min-h-screen flex-col;
+    z-index: 9999;
+  
+    nav{
+        @apply container;
+  
+        .nav-mobile{
+            @apply flex flex-col items-start;
+            margin: 0;
+            background-color: white;
+  
+            li{
+                @apply text-red text-2xl lg:flex-grow font-bold p-2 bg-transparent py-3;
+                cursor: pointer;
+                width: 100%;
+                height: auto;
+                border-bottom: 1px solid #C4C4C4;
+  
+                &:last-child{
+                  @apply text-primary;
+                }
+  
+                a{
+              
+                    &:hover{
+                      @apply text-blue;
+                    }
+              
+                    &::before{
+                      display: inline-flex;
+                      position: relative;
+                      top: 30px;
+                      right: -190px;
+                      content: url(svg-encode('<svg width="32" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.47 15.908 10.6 5.133M16.609 6.21l6.601-3.118M7.336 21.283l2.032 3.531" stroke="#AAD7FF" stroke-width="4.759" stroke-linecap="round"/></svg>'));              
+                    }
+                
+                  }
+            }
+    
+        }
+
+        @screen lg{
+            @apply hidden;
+        }
+    }
+  
+    .mobile-block{
+        @apply p-6;
+        div {
+            @apply bg-white p-2 whitespace-normal w-10/12 rounded-sm;
+  
+            h1{
+                @apply text-2xl;
+                span{
+                    @apply font-bold;
+                }
+            }
+  
+            p{
+                @apply text-sm m-1;
+                display: inline-block;
+                overflow-wrap: break-word;
+            }
+          }  
+      }
+  
+    .mobile-footer{
+        @apply flex flex-col container;
+  
+        div{
+          @apply my-2;
+          ul{
+            @apply flex place-content-around text-base underline;
+          }
+        }
+  
+        img{
+          @apply max-w-xs self-center	;
+        }
+  
+        .mobile-brand{
+          @apply flex place-content-around items-baseline	;
+        }
+  
+        p{
+          @apply my-0 text-center;
+        }
+      }
+  }
+
+
+.avertissement-message {
+    @apply bg-darkred text-sm text-secondary w-full text-center p-2 my-0;
+}
